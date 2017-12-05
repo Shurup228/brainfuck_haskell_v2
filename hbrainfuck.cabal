@@ -19,16 +19,20 @@ description:         Please see the README on Github at <https://github.com/gith
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     Parser, Optimizer
   build-depends:       base >= 4.7 && < 5
+                     , protolude
+                     , text
   default-language:    Haskell2010
 
 executable hbrainfuck-exe
   hs-source-dirs:      app
   main-is:             Main.hs
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  ghc-options:         -O2 -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
                      , hbrainfuck
+                     , protolude
+                     , directory
   default-language:    Haskell2010
 
 test-suite hbrainfuck-test

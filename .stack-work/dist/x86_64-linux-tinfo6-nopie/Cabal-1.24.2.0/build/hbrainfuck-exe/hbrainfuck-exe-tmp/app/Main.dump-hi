@@ -1,0 +1,202 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-03 02:26:26.547511645 UTC
+
+interface main@main:Main 8002
+  interface hash: c515d2f7161e76c5dba49f369dd735f5
+  ABI hash: fe1870169273bf31eaca816bd602891b
+  export-list hash: 37b0d34383db07de8a241bd9f16a2be8
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1af9d23f01089d28f4ed6984bcfec00e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.parseArgs
+  Main.repl
+  Main.run
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      filepath-1.4.1.1@filepath-1.4.1.1 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT*
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.1@unix-2.7.2.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  directory-1.3.0.0@directory-1.3.0.0:System.Directory 8ff5ebd6a93811413df021d2be39a158
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT:Debug 18e7fdd0b7514d5a8913e5e56d1edfef
+import  -/  protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT:Protolude d65a41c9675ecca5db0df7b40ef7623b
+import  -/  protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT:Show 46904a1db9602230f631bb71af226bc0
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.IO 171d3af35eed6c4817ecbf66037edf44
+import  -/  text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Internal 9bfcbbbe07ecef48f631025a838df7da
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+207a03911f14f214817b168a9dd55f13
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+76de4e544ec9da8cdbaaa7b8e5faf98b
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Environment.getArgs1 s of ds1 { (#,#) ipv ipv1 ->
+                 Main.main2 ipv1 ipv }) -}
+bdb4aa834e63446ae2cafb31473ff869
+  main2 ::
+    [[GHC.Types.Char]]
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (ds :: [[GHC.Types.Char]])
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case ds of wild {
+                   []
+                   -> case Debug.undefined
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                      of {}
+                   : ds1 ds2
+                   -> let {
+                        $wfail :: GHC.Prim.State# GHC.Prim.RealWorld
+                                  -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                          {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                        = \ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                          case ds2 of wild1 {
+                            []
+                            -> case (System.IO.Error.catchIOError
+                                       @ GHC.Types.Bool
+                                       (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                        case System.Posix.Files.getFileStatus1
+                                               ds1
+                                               s of ds10 { (#,#) ipv ipv1 ->
+                                        System.Directory.doesFileExist1 ipv1 ipv })
+                                         `cast`
+                                       (Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R))
+                                       System.Directory.doesDirectoryExist1
+                                         `cast`
+                                       (<GHC.IO.Exception.IOError>_R
+                                        ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)))
+                                      `cast`
+                                    (GHC.Types.N:IO[0] <GHC.Types.Bool>_R)
+                                      w of ds3 { (#,#) ipv ipv1 ->
+                               case ipv1 of wild2 {
+                                 GHC.Types.False
+                                 -> Data.Text.IO.hPutStrLn1 GHC.IO.Handle.FD.stdout Main.main5 ipv
+                                 GHC.Types.True
+                                 -> case GHC.IO.Handle.FD.openFile1
+                                           ds1
+                                           GHC.IO.IOMode.ReadMode
+                                           ipv of ds4 { (#,#) ipv2 ipv3 ->
+                                    case Data.Text.IO.getContents2
+                                           ipv3
+                                           ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                                    case Debug.undefined
+                                    ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                    of {} } } } }
+                            : ipv ipv1
+                            -> case Main.main4
+                               ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                               of {} }
+                      } in
+                      case GHC.Base.eqString ds1 Main.main3 of wild1 {
+                        GHC.Types.False -> $wfail eta
+                        GHC.Types.True
+                        -> case ds2 of wild2 {
+                             []
+                             -> case Debug.undefined
+                                ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                of {}
+                             : ipv ipv1 -> $wfail eta } } }) -}
+2a9751186c3897374f4fdabf781f72d8
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-i"#) -}
+1b8c8a07c818c436f50534f5ae196835
+  main4 :: GHC.Types.IO ()
+  {- Strictness: x -}
+e05f6b03ef57bd3e1023e1ced7f08411
+  main5 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "Ti dibil, sore"#) -}
+1c3511710ce6b67866dfc54c15de059a
+  main6 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+b2b755603166ee906697a16c02a89f07
+  parseArgs :: [[GHC.Types.Char]] -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main2
+                  `cast`
+                (<[[GHC.Types.Char]]>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+f9c37653c5da5f71c637557b12d7c9eb
+  repl :: GHC.Types.IO ()
+  {- Strictness: x,
+     Unfolding: InlineRule (0, True, True)
+                (Debug.undefined @ (GHC.Types.IO ())) -}
+243949daa675cac1ecf09cce3f203310
+  run :: Data.Text.Internal.Text -> GHC.Types.IO ()
+  {- Strictness: x,
+     Unfolding: InlineRule (0, True, True)
+                (Debug.undefined @ (Data.Text.Internal.Text -> GHC.Types.IO ())) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
