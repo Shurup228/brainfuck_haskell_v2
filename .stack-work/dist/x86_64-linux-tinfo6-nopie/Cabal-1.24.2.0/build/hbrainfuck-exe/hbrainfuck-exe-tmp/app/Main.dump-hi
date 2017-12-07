@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-03 02:26:26.547511645 UTC
+2017-12-07 14:45:54.259346002 UTC
 
 interface main@main:Main 8002
-  interface hash: c515d2f7161e76c5dba49f369dd735f5
-  ABI hash: fe1870169273bf31eaca816bd602891b
-  export-list hash: 37b0d34383db07de8a241bd9f16a2be8
+  interface hash: c4d481bb8458d56ec945dcd8c4be64ed
+  ABI hash: 310b94821ec92fdd4e7c73d207b317e7
+  export-list hash: be6484093d1287491eba1d1bf2804ffb
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 1af9d23f01089d28f4ed6984bcfec00e
   sig of: Nothing
@@ -24,6 +24,7 @@ package dependencies: array-0.5.1.1@array-0.5.1.1
                       containers-0.5.7.1@containers-0.5.7.1
                       deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
                       filepath-1.4.1.1@filepath-1.4.1.1 ghc-prim-0.5.0.0
+                      hbrainfuck-0.1.0.0@hbrainfuck-0.1.0.0-B95AI9zbtcOI3nw9DpqeuW
                       integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
                       protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT*
                       safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
@@ -62,6 +63,8 @@ import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
 import  -/  directory-1.3.0.0@directory-1.3.0.0:System.Directory 8ff5ebd6a93811413df021d2be39a158
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  hbrainfuck-0.1.0.0@hbrainfuck-0.1.0.0-B95AI9zbtcOI3nw9DpqeuW:Optimizer 479d2fa254e07c30eefb2ebcca4449ad
+import  -/  hbrainfuck-0.1.0.0@hbrainfuck-0.1.0.0-B95AI9zbtcOI3nw9DpqeuW:Parser 5ce613ef9966e00d909b976a7174a4dc
 import  -/  protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT:Debug 18e7fdd0b7514d5a8913e5e56d1edfef
 import  -/  protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT:Protolude d65a41c9675ecca5db0df7b40ef7623b
 import  -/  protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT:Show 46904a1db9602230f631bb71af226bc0

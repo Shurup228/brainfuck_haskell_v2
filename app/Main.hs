@@ -5,6 +5,8 @@ module Main where
 
 import Protolude
 import System.Directory (doesFileExist)
+import Optimizer
+import Parser
 
 main :: IO ()
 main = getArgs >>= parseArgs

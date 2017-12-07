@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-03 02:47:37.744474229 UTC
+2017-12-07 14:45:53.087895792 UTC
 
 interface hbrainfuck-0.1.0.0-B95AI9zbtcOI3nw9DpqeuW:Optimizer 8002
-  interface hash: 12dfe3326815b4deba3c06ffd276bd85
-  ABI hash: 6f7c998050b808c005800910e2a5699c
+  interface hash: ff351670275f2b65be8ba90f83b61600
+  ABI hash: 479d2fa254e07c30eefb2ebcca4449ad
   export-list hash: e0afc53f58c936da2f20112a315691f4
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ba5f4d7ed6323096c6733c8b52d6e992
@@ -49,10 +49,14 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
                          text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
-import  -/  Parser 29eae9b724ce95651634f6cff0ed6272
-  exports: d9ffbe340ef63109b465b7bca446adef
-  Token 7d770c901ba6df6fe2b53570f3c90796
-import  -/  protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT:Debug 18e7fdd0b7514d5a8913e5e56d1edfef
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  Parser 5ce613ef9966e00d909b976a7174a4dc
+  exports: 26f837225ff9e4ffc6b85de3f85d1d1d
+  Change 837d74ff384c4ed720d02eb2ec422d9e
+  Clear cb15250ca0e17c7f115954c90172bbd1
+  Loop a635e13e94765453d0bb864b44182aca
+  Move be174f396b790c7d5a380a51f6ad6495
+  Token 7229c2ec34b6e9bf1852c4fdcab4b9be
 import  -/  protolude-0.1.10@protolude-0.1.10-EbWghKT4Ra36YSCOzDFDKT:Protolude d65a41c9675ecca5db0df7b40ef7623b
 61e3651b7fdd08e078567249614053df
   $trModule :: GHC.Types.Module
@@ -69,11 +73,17 @@ cd77c1376218eaf8b8df560806a428d5
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS
                    "hbrainfuck-0.1.0.0-B95AI9zbtcOI3nw9DpqeuW"#) -}
-0e1df0bd47bdc23bbf3db9cba27ca0d4
-  optimize :: [Parser.Token] -> [Parser.Token]
-  {- Arity: 1, Strictness: <B,A>x,
-     Unfolding: InlineRule (1, True, True)
-                (\ (prog :: [Parser.Token]) -> Debug.undefined @ [Parser.Token]) -}
+3fcdd356336689dd263a666c22b8e5fa
+  optimize :: [Parser.Token] -> GHC.Base.Maybe [Parser.Token]
+  {- Arity: 1, Strictness: <L,1*U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [Parser.Token]) ->
+                 GHC.Base.Just
+                   @ [Parser.Token]
+                   (Optimizer.optimize_optimize' xs)) -}
+ad7fbbe02ef4e64990bc594aba73e3fc
+  optimize_optimize' :: [Parser.Token] -> [Parser.Token]
+  {- Arity: 1, Strictness: <S,1*U> -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

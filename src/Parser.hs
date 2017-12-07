@@ -5,16 +5,21 @@ module Parser
     (
     parse
   , Token(..)
+  , Code
     ) where
 
 import           Protolude
 import qualified Data.Text as T (uncons, snoc, filter)
 
+
 data Token = Move Int
            | Change Int
            | Print
            | Put
+           | Clear
            | Loop [Token] deriving (Show, Eq)
+
+type Code = Text
 
 
 syntax :: Text -> Bool
@@ -51,7 +56,7 @@ parse' code = fromMaybe ([Move 1]) $ T.uncons code >>=
                         ']' -> getLoop (acc - 1) (T.snoc loop op) c
                         _  ->  getLoop    acc    (T.snoc loop op) c))
 
-parse :: Text -> Maybe [Token]
+parse :: Code -> Maybe [Token]
 parse code = case syntax code of
     True  -> Just (parse' code)
     False -> Nothing
